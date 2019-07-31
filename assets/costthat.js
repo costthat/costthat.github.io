@@ -677,52 +677,1240 @@
       type: 'products',
       id: 'digitalocean-1gb-1vcpu',
       attributes: {
-        title: "DigitalOcean 1 GB & 1 vCPU",
-        manufacturer_name: "GoDaddy",
-        manufacturer_url: "https://www.godaddy.com/",
+        name: "DigitalOcean 1 GB & 1 vCPU",
+        description: "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests.",
         vcpu: 1,
         memory: 1,
         storage: 25,
         transfer: 1,
-        city: "San Francisco",
-        region: "US East (Ohio)",
-        price: 5,
         image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
-        description: "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+        price: 5,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "GoDaddy",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.godaddy.com/",
+        "url-clicked": null,
+        category: null
       }
     }, {
       type: 'products',
       id: 'digitalocean-2gb-1vcpu',
       attributes: {
-        title: "DigitalOcean 2 GB & 1 vCPU",
-        manufacturer_name: "Namecheap",
-        manufacturer_url: "https://www.namecheap.com/",
+        name: "DigitalOcean 2 GB & 1 vCPU",
+        description: "A commuters dream. This rental is within walking distance of 2 bus stops and the Metro.",
         vcpu: 1,
         memory: 2,
         storage: 50,
         transfer: 2,
-        city: "Seattle",
-        region: "US East (Ohio)",
-        price: 10,
         image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg",
-        description: "A commuters dream. This rental is within walking distance of 2 bus stops and the Metro."
+        price: 10,
+        url: null,
+        viewed: null,
+        region: "Seattle",
+        "manufacturer-name": "Namecheap",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.namecheap.com/",
+        "url-clicked": null,
+        category: null
       }
     }, {
       type: 'products',
       id: 'digitalocean-3gb-1vcpu',
       attributes: {
-        title: "DigitalOcean 3 GB & 1 vCPU",
-        manufacturer_name: "Domain.com",
-        manufacturer_url: "https://www.domain.com/",
+        name: "DigitalOcean 3 GB & 1 vCPU",
+        description: "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet.",
         vcpu: 1,
         memory: 3,
         storage: 60,
         transfer: 3,
-        city: "Portland",
-        region: "US East (Ohio)",
-        price: 15,
         image: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg",
-        description: "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet."
+        price: 15,
+        url: null,
+        viewed: null,
+        region: "Portland",
+        "manufacturer-name": "Domain.com",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.domain.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-1gb-1vcpu',
+      attributes: {
+        name: "DigitalOcean 1 GB & 1 vCPU",
+        description: "DigitalOcean 1 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 1,
+        storage: 25,
+        transfer: 1,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 5,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-2gb-1vcpu',
+      attributes: {
+        name: "DigitalOcean 2 GB & 1 vCPU",
+        description: "DigitalOcean 2 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 2,
+        storage: 50,
+        transfer: 2,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 10,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-3gb-1vcpu',
+      attributes: {
+        name: "DigitalOcean 3 GB & 1 vCPU",
+        description: "DigitalOcean 3 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 3,
+        storage: 60,
+        transfer: 3,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 15,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-2gb-2vcpu',
+      attributes: {
+        name: "DigitalOcean 2 GB & 2 vCPU",
+        description: "DigitalOcean 2 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 2,
+        storage: 60,
+        transfer: 3,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 15,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-1gb-3vcpu',
+      attributes: {
+        name: "DigitalOcean 1 GB & 3 vCPU",
+        description: "DigitalOcean 1 GB & 3 vCPU.",
+        vcpu: 3,
+        memory: 1,
+        storage: 60,
+        transfer: 3,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 15,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-4gb-2vcpu',
+      attributes: {
+        name: "DigitalOcean 4 GB & 2 vCPU",
+        description: "DigitalOcean 4 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 4,
+        storage: 80,
+        transfer: 4,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 20,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-8gb-4vcpu',
+      attributes: {
+        name: "DigitalOcean 8 GB & 4 vCPU",
+        description: "DigitalOcean 8 GB & 4 vCPU.",
+        vcpu: 4,
+        memory: 8,
+        storage: 160,
+        transfer: 5,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 40,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-16gb-6vcpu',
+      attributes: {
+        name: "DigitalOcean 16 GB & 6 vCPU",
+        description: "DigitalOcean 16 GB & 6 vCPU.",
+        vcpu: 6,
+        memory: 16,
+        storage: 320,
+        transfer: 6,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 80,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-32gb-8vcpu',
+      attributes: {
+        name: "DigitalOcean 32 GB & 8 vCPU",
+        description: "DigitalOcean 32 GB & 8 vCPU.",
+        vcpu: 8,
+        memory: 32,
+        storage: 640,
+        transfer: 7,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 160,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-48gb-12vcpu',
+      attributes: {
+        name: "DigitalOcean 48 GB & 12 vCPU",
+        description: "DigitalOcean 48 GB & 12 vCPU.",
+        vcpu: 12,
+        memory: 48,
+        storage: 960,
+        transfer: 8,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 240,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-64gb-16vcpu',
+      attributes: {
+        name: "DigitalOcean 64 GB & 16 vCPU",
+        description: "DigitalOcean 64 GB & 16 vCPU.",
+        vcpu: 16,
+        memory: 64,
+        storage: 1280,
+        transfer: 9,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 320,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-96gb-20vcpu',
+      attributes: {
+        name: "DigitalOcean 96 GB & 20 vCPU",
+        description: "DigitalOcean 96 GB & 20 vCPU.",
+        vcpu: 20,
+        memory: 96,
+        storage: 1920,
+        transfer: 10,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 480,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-128gb-24vcpu',
+      attributes: {
+        name: "DigitalOcean 128 GB & 24 vCPU",
+        description: "DigitalOcean 128 GB & 24 vCPU.",
+        vcpu: 24,
+        memory: 128,
+        storage: 2560,
+        transfer: 11,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 640,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'digitalocean-192gb-32vcpu',
+      attributes: {
+        name: "DigitalOcean 192 GB & 32 vCPU",
+        description: "DigitalOcean 192 GB & 32 vCPU.",
+        vcpu: 32,
+        memory: 192,
+        storage: 3840,
+        transfer: 12,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 960,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "DigitalOcean",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.digitalocean.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-1gb-1vcpu',
+      attributes: {
+        name: "Linode 1 GB & 1 vCPU",
+        description: "Linode 1 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 1,
+        storage: 25,
+        transfer: 1,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 5,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-2gb-1vcpu',
+      attributes: {
+        name: "Linode 2 GB & 1 vCPU",
+        description: "Linode 2 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 2,
+        storage: 50,
+        transfer: 2,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 10,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-4gb-2vcpu',
+      attributes: {
+        name: "Linode 4 GB & 2 vCPU",
+        description: "Linode 4 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 4,
+        storage: 80,
+        transfer: 4,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 20,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-8gb-4vcpu',
+      attributes: {
+        name: "Linode 8 GB & 4 vCPU",
+        description: "Linode 8 GB & 4 vCPU.",
+        vcpu: 4,
+        memory: 8,
+        storage: 160,
+        transfer: 5,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 40,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-16gb-6vcpu',
+      attributes: {
+        name: "Linode 16 GB & 6 vCPU",
+        description: "Linode 16 GB & 6 vCPU.",
+        vcpu: 6,
+        memory: 16,
+        storage: 320,
+        transfer: 8,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 80,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-32gb-8vcpu',
+      attributes: {
+        name: "Linode 32 GB & 8 vCPU",
+        description: "Linode 32 GB & 8 vCPU.",
+        vcpu: 8,
+        memory: 32,
+        storage: 640,
+        transfer: 16,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 160,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-64gb-16vcpu',
+      attributes: {
+        name: "Linode 64 GB & 16 vCPU",
+        description: "Linode 64 GB & 16 vCPU.",
+        vcpu: 16,
+        memory: 64,
+        storage: 1280,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 320,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-96gb-20vcpu',
+      attributes: {
+        name: "Linode 96 GB & 20 vCPU",
+        description: "Linode 96 GB & 20 vCPU.",
+        vcpu: 20,
+        memory: 96,
+        storage: 1920,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 480,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-128gb-24vcpu',
+      attributes: {
+        name: "Linode 128 GB & 24 vCPU",
+        description: "Linode 128 GB & 24 vCPU.",
+        vcpu: 24,
+        memory: 128,
+        storage: 2560,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 640,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-192gb-32vcpu',
+      attributes: {
+        name: "Linode 192 GB & 32 vCPU",
+        description: "Linode 192 GB & 32 vCPU.",
+        vcpu: 32,
+        memory: 192,
+        storage: 3840,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 960,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-4gb-2vcpu',
+      attributes: {
+        name: "Linode Dedicated 4 GB & 2 vCPU",
+        description: "Linode Dedicated 4 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 4,
+        storage: 80,
+        transfer: 4,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 30,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-8gb-4vcpu',
+      attributes: {
+        name: "Linode Dedicated 8 GB & 4 vCPU",
+        description: "Linode Dedicated 8 GB & 4 vCPU.",
+        vcpu: 4,
+        memory: 8,
+        storage: 160,
+        transfer: 5,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 60,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-16gb-8vcpu',
+      attributes: {
+        name: "Linode Dedicated 16 GB & 8 vCPU",
+        description: "Linode Dedicated 16 GB & 8 vCPU.",
+        vcpu: 8,
+        memory: 16,
+        storage: 320,
+        transfer: 6,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 120,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-32gb-16vcpu',
+      attributes: {
+        name: "Linode Dedicated 32 GB & 16 vCPU",
+        description: "Linode Dedicated 32 GB & 16 vCPU.",
+        vcpu: 16,
+        memory: 32,
+        storage: 640,
+        transfer: 7,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 240,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-64gb-32vcpu',
+      attributes: {
+        name: "Linode Dedicated 64 GB & 32 vCPU",
+        description: "Linode Dedicated 64 GB & 32 vCPU.",
+        vcpu: 32,
+        memory: 64,
+        storage: 1280,
+        transfer: 8,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 480,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-96gb-48vcpu',
+      attributes: {
+        name: "Linode Dedicated 96 GB & 48 vCPU",
+        description: "Linode Dedicated 96 GB & 48 vCPU.",
+        vcpu: 48,
+        memory: 96,
+        storage: 1920,
+        transfer: 9,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 720,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-32gb-8vcpu',
+      attributes: {
+        name: "Linode Dedicated 32 GB & 8 vCPU",
+        description: "Linode Dedicated 32GB + RTX6000 GPU x1.",
+        vcpu: 8,
+        memory: 32,
+        storage: 640,
+        transfer: 16,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 1000,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-64gb-16vcpu',
+      attributes: {
+        name: "Linode Dedicated 64 GB & 16 vCPU",
+        description: "Linode Dedicated 64GB + RTX6000 GPU x2.",
+        vcpu: 16,
+        memory: 64,
+        storage: 1280,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 2000,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-96gb-20vcpu',
+      attributes: {
+        name: "Linode Dedicated 96 GB & 20 vCPU",
+        description: "Linode Dedicated 96GB + RTX6000 GPU x3.",
+        vcpu: 20,
+        memory: 96,
+        storage: 1920,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 3000,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-dedicated-128gb-24vcpu',
+      attributes: {
+        name: "Linode Dedicated 128 GB & 24 vCPU",
+        description: "Linode Dedicated 128GB + RTX6000 GPU x4.",
+        vcpu: 24,
+        memory: 128,
+        storage: 2560,
+        transfer: 20,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 4000,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-24gb-1vcpu',
+      attributes: {
+        name: "Linode 24 GB & 1 vCPU",
+        description: "Linode 24 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 24,
+        storage: 20,
+        transfer: 5,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 60,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-48gb-2vcpu',
+      attributes: {
+        name: "Linode 48 GB & 2 vCPU",
+        description: "Linode 48 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 48,
+        storage: 40,
+        transfer: 6,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 120,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-90gb-4vcpu',
+      attributes: {
+        name: "Linode 90 GB & 4 vCPU",
+        description: "Linode 90 GB & 4 vCPU.",
+        vcpu: 4,
+        memory: 90,
+        storage: 90,
+        transfer: 7,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 240,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-150gb-8vcpu',
+      attributes: {
+        name: "Linode 150 GB & 8 vCPU",
+        description: "Linode 150 GB & 8 vCPU.",
+        vcpu: 8,
+        memory: 150,
+        storage: 200,
+        transfer: 8,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 480,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'linode-300gb-16vcpu',
+      attributes: {
+        name: "Linode 300 GB & 16 vCPU",
+        description: "Linode 300 GB & 16 vCPU.",
+        vcpu: 16,
+        memory: 300,
+        storage: 340,
+        transfer: 9,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 960,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Linode",
+        "manufacturer-image": null,
+        "manufacturer-url": "https://www.linode.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-512mb-1vcpu-ipv6',
+      attributes: {
+        name: "Vultr 512 MB & 1 vCPU",
+        description: "Vultr 512 MB & 1 vCPU.",
+        vcpu: 1,
+        memory: 0.5,
+        storage: 10,
+        transfer: 0.50,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 2.50,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-512mb-1vcpu',
+      attributes: {
+        name: "Vultr 512 MB & 1 vCPU",
+        description: "Vultr 512 MB & 1 vCPU.",
+        vcpu: 1,
+        memory: 0.5,
+        storage: 10,
+        transfer: 0.50,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 3.50,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-1gb-1vcpu',
+      attributes: {
+        name: "Vultr 1 GB & 1 vCPU",
+        description: "Vultr 1 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 1024,
+        storage: 25,
+        transfer: 1,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 5,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-2gb-1vcpu',
+      attributes: {
+        name: "Vultr 2 GB & 1 vCPU",
+        description: "Vultr 2 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 2,
+        storage: 55,
+        transfer: 2,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 10,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-4gb-2vcpu',
+      attributes: {
+        name: "Vultr 4 GB & 2 vCPU",
+        description: "Vultr 4 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 4,
+        storage: 80,
+        transfer: 3,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 20,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-8gb-4vcpu',
+      attributes: {
+        name: "Vultr 8 GB & 4 vCPU",
+        description: "Vultr 8 GB & 4 vCPU.",
+        vcpu: 4,
+        memory: 8,
+        storage: 160,
+        transfer: 4,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 40,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-16gb-6vcpu',
+      attributes: {
+        name: "Vultr 16 GB & 6 vCPU",
+        description: "Vultr 16 GB & 6 vCPU.",
+        vcpu: 6,
+        memory: 16,
+        storage: 320,
+        transfer: 5,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 80,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-32gb-8vcpu',
+      attributes: {
+        name: "Vultr 32 GB & 8 vCPU",
+        description: "Vultr 32 GB & 8 vCPU.",
+        vcpu: 8,
+        memory: 32,
+        storage: 640,
+        transfer: 6,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 160,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-64gb-16vcpu',
+      attributes: {
+        name: "Vultr 64 GB & 16 vCPU",
+        description: "Vultr 64 GB & 16 vCPU.",
+        vcpu: 16,
+        memory: 64,
+        storage: 1280,
+        transfer: 10,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 320,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-96gb-24vcpu',
+      attributes: {
+        name: "Vultr 96 GB & 24 vCPU",
+        description: "Vultr 96 GB & 24 vCPU.",
+        vcpu: 24,
+        memory: 96,
+        storage: 1600,
+        transfer: 15,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 640,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-1gb-1vcpu',
+      attributes: {
+        name: "Vultr High Frequency 1 GB & 1 vCPU",
+        description: "Vultr High Frequency 1 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 1024,
+        storage: 32,
+        transfer: 1,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 6,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-2gb-1vcpu',
+      attributes: {
+        name: "Vultr High Frequency 2 GB & 1 vCPU",
+        description: "Vultr High Frequency 2 GB & 1 vCPU.",
+        vcpu: 1,
+        memory: 2,
+        storage: 64,
+        transfer: 2,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 12,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-4gb-2vcpu',
+      attributes: {
+        name: "Vultr High Frequency 4 GB & 2 vCPU",
+        description: "Vultr High Frequency 4 GB & 2 vCPU.",
+        vcpu: 2,
+        memory: 4,
+        storage: 128,
+        transfer: 3,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 24,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-8gb-3vcpu',
+      attributes: {
+        name: "Vultr High Frequency 8 GB & 3 vCPU",
+        description: "Vultr High Frequency 8 GB & 3 vCPU.",
+        vcpu: 3,
+        memory: 8,
+        storage: 256,
+        transfer: 4,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 48,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-16gb-4vcpu',
+      attributes: {
+        name: "Vultr High Frequency 16 GB & 4 vCPU",
+        description: "Vultr High Frequency 16 GB & 4 vCPU.",
+        vcpu: 4,
+        memory: 16,
+        storage: 384,
+        transfer: 5,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 96,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-32gb-8vcpu',
+      attributes: {
+        name: "Vultr High Frequency 32 GB & 8 vCPU",
+        description: "Vultr High Frequency 32 GB & 8 vCPU.",
+        vcpu: 8,
+        memory: 32,
+        storage: 512,
+        transfer: 6,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 192,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
+      }
+    }, {
+      type: 'products',
+      id: 'vultr-high-frequency-48gb-12vcpu',
+      attributes: {
+        name: "Vultr High Frequency 48 GB & 12 vCPU",
+        description: "Vultr High Frequency 48 GB & 12 vCPU.",
+        vcpu: 12,
+        memory: 48,
+        storage: 768,
+        transfer: 8,
+        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        price: 256,
+        url: null,
+        viewed: null,
+        region: "San Francisco",
+        "manufacturer-name": "Vultr",
+        "manufacturer-image": null,
+        "manufacturer-url": "http://www.vultr.com/",
+        "url-clicked": null,
+        category: null
       }
     }];
     this.get('/products', function (db, request) {
@@ -823,14 +2011,22 @@
   } = _emberData.default;
 
   var _default = Model.extend({
-    title: _emberData.default.attr(),
+    name: _emberData.default.attr(),
+    description: _emberData.default.attr(),
     vcpu: _emberData.default.attr(),
-    city: _emberData.default.attr(),
     memory: _emberData.default.attr(),
-    image: _emberData.default.attr(),
     storage: _emberData.default.attr(),
     transfer: _emberData.default.attr(),
-    description: _emberData.default.attr()
+    image: _emberData.default.attr(),
+    price: _emberData.default.attr(),
+    url: _emberData.default.attr(),
+    viewed: _emberData.default.attr(),
+    region: _emberData.default.attr(),
+    manufacturerName: _emberData.default.attr(),
+    manufacturerImage: _emberData.default.attr(),
+    manufacturerUrl: _emberData.default.attr(),
+    urlClicked: _emberData.default.attr(),
+    category: _emberData.default.attr()
   });
 
   _exports.default = _default;
@@ -1206,8 +2402,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "IRWVCOgq",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"article\",true],[10,\"class\",\"listing\"],[8],[0,\"\\n  \"],[7,\"a\",true],[11,\"onclick\",[28,\"action\",[[23,0,[]],\"toggleImageSize\"],null]],[11,\"class\",[29,[\"image \",[28,\"if\",[[23,0,[\"isWide\"]],\"wide\"],null]]]],[10,\"role\",\"button\"],[8],[0,\"\\n    \"],[7,\"img\",true],[11,\"src\",[23,0,[\"product\",\"image\"]]],[10,\"alt\",\"\"],[8],[9],[0,\"\\n    \"],[7,\"small\",true],[8],[0,\"View Larger\"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"details\"],[8],[0,\"\\n    \"],[7,\"h3\",true],[8],[4,\"link-to\",null,[[\"class\",\"route\",\"model\"],[[24,[\"product\",\"id\"]],\"products.show\",[24,[\"product\"]]]],{\"statements\":[[1,[23,0,[\"product\",\"title\"]],false]],\"parameters\":[]},null],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail owner\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"vCPU:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"vcpu\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail type\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Memory (GiB):\"],[9],[0,\" \"],[1,[28,\"plan-property-type\",[[23,0,[\"product\",\"memory\"]]],null],false],[0,\" - \"],[1,[23,0,[\"product\",\"memory\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail location\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Storage (GB):\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"storage\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail bedrooms\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Data Transfer:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"transfer\"]],false],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[5,\"location-map\",[],[[\"@location\"],[[23,0,[\"product\",\"city\"]]]]],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
+    "id": "iKUiiJHz",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"article\",true],[10,\"class\",\"listing\"],[8],[0,\"\\n  \"],[7,\"a\",true],[11,\"onclick\",[28,\"action\",[[23,0,[]],\"toggleImageSize\"],null]],[11,\"class\",[29,[\"image \",[28,\"if\",[[23,0,[\"isWide\"]],\"wide\"],null]]]],[10,\"role\",\"button\"],[8],[0,\"\\n    \"],[7,\"img\",true],[11,\"src\",[23,0,[\"product\",\"image\"]]],[10,\"alt\",\"\"],[8],[9],[0,\"\\n    \"],[7,\"small\",true],[8],[0,\"View Larger\"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"details\"],[8],[0,\"\\n    \"],[7,\"h3\",true],[8],[4,\"link-to\",null,[[\"class\",\"route\",\"model\"],[[24,[\"product\",\"id\"]],\"products.show\",[24,[\"product\"]]]],{\"statements\":[[1,[23,0,[\"product\",\"name\"]],false]],\"parameters\":[]},null],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail owner\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"vCPU:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"vcpu\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail type\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Memory (GiB):\"],[9],[0,\" \"],[1,[28,\"plan-property-type\",[[23,0,[\"product\",\"memory\"]]],null],false],[0,\" - \"],[1,[23,0,[\"product\",\"memory\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail location\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Storage (GB):\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"storage\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail bedrooms\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Data Transfer:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"transfer\"]],false],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[5,\"location-map\",[],[[\"@location\"],[[23,0,[\"product\",\"region\"]]]]],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
       "moduleName": "costthat/templates/components/product-listing.hbs"
     }
@@ -1350,8 +2546,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "EY+GbGTO",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"div\",true],[10,\"class\",\"jumbo show-listing\"],[8],[0,\"\\n  \"],[7,\"h2\",true],[10,\"class\",\"title\"],[8],[1,[23,0,[\"model\",\"title\"]],false],[9],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"content\"],[8],[0,\"\\n    \"],[7,\"div\",true],[8],[0,\"\\n      \"],[7,\"img\",true],[11,\"src\",[23,0,[\"model\",\"image\"]]],[10,\"class\",\"rental-pic\"],[11,\"alt\",[29,[\"Picture of \",[23,0,[\"model\",\"title\"]]]]],[8],[9],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail-section\"],[8],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail owner\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"vCPU:\"],[9],[0,\" \"],[1,[23,0,[\"model\",\"vcpu\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"Memory (GiB):\"],[9],[0,\" \"],[1,[28,\"plan-property-type\",[[23,0,[\"model\",\"memory\"]]],null],false],[0,\" - \"],[1,[23,0,[\"model\",\"memory\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"Storage (GB):\"],[9],[0,\" \"],[1,[23,0,[\"model\",\"storage\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"Data Transfer:\"],[9],[0,\" \"],[1,[23,0,[\"model\",\"transfer\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"description\"],[8],[0,\"\\n        \"],[7,\"p\",true],[8],[1,[23,0,[\"model\",\"description\"]],false],[9],[0,\"\\n      \"],[9],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
+    "id": "0MrvMuJp",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"div\",true],[10,\"class\",\"jumbo show-listing\"],[8],[0,\"\\n  \"],[7,\"h2\",true],[10,\"class\",\"title\"],[8],[1,[23,0,[\"model\",\"name\"]],false],[9],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"content\"],[8],[0,\"\\n    \"],[7,\"div\",true],[8],[0,\"\\n      \"],[7,\"img\",true],[11,\"src\",[23,0,[\"model\",\"image\"]]],[10,\"class\",\"rental-pic\"],[11,\"alt\",[29,[\"Picture of \",[23,0,[\"model\",\"name\"]]]]],[8],[9],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail-section\"],[8],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail owner\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"vCPU:\"],[9],[0,\" \"],[1,[23,0,[\"model\",\"vcpu\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"Memory (GiB):\"],[9],[0,\" \"],[1,[28,\"plan-property-type\",[[23,0,[\"model\",\"memory\"]]],null],false],[0,\" - \"],[1,[23,0,[\"model\",\"memory\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"Storage (GB):\"],[9],[0,\" \"],[1,[23,0,[\"model\",\"storage\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"detail\"],[8],[0,\"\\n        \"],[7,\"strong\",true],[8],[0,\"Data Transfer:\"],[9],[0,\" \"],[1,[23,0,[\"model\",\"transfer\"]],false],[0,\"\\n      \"],[9],[0,\"\\n      \"],[7,\"div\",true],[10,\"class\",\"description\"],[8],[0,\"\\n        \"],[7,\"p\",true],[8],[1,[23,0,[\"model\",\"description\"]],false],[9],[0,\"\\n      \"],[9],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
       "moduleName": "costthat/templates/products/show.hbs"
     }
