@@ -236,10 +236,10 @@
 
   var _default = Ember.Controller.extend({
     actions: {
-      filterByCity(param) {
+      filterByTerm(param) {
         if (param !== '') {
           return this.store.query('product', {
-            city: param
+            term: param
           }).then(filteredResults => {
             return {
               query: param,
@@ -1914,9 +1914,51 @@
       }
     }];
     this.get('/products', function (db, request) {
-      if (request.queryParams.city !== undefined) {
+      if (request.queryParams.term !== undefined) {
+        var options = {};
+        var args = request.queryParams.term.split(' ');
+        var i = 0;
+
+        while (i < args.length) {
+          if (args[i] === 'n' || args[i] === 'v' || args[i] === 'm' || args[i] === 's' || args[i] === 't') {
+            options[args[i]] = args[++i];
+          }
+
+          i++;
+        }
+
         let filteredProducts = products.filter(function (i) {
-          return i.attributes.city.toLowerCase().indexOf(request.queryParams.city.toLowerCase()) !== -1;
+          var bCondition = true;
+
+          if ('n' in options) {
+            bCondition = bCondition && i.attributes.name.toLowerCase().indexOf(options['n'].toLowerCase()) !== -1;
+          }
+
+          if ('v' in options) {
+            options['v'].split(',').forEach(function (element) {
+              bCondition = bCondition && eval('i.attributes.vcpu' + element);
+            });
+          }
+
+          if ('m' in options) {
+            options['m'].split(',').forEach(function (element) {
+              bCondition = bCondition && eval('i.attributes.memory' + element);
+            });
+          }
+
+          if ('s' in options) {
+            options['s'].split(',').forEach(function (element) {
+              bCondition = bCondition && eval('i.attributes.storage' + element);
+            });
+          }
+
+          if ('t' in options) {
+            options['t'].split(',').forEach(function (element) {
+              bCondition = bCondition && eval('i.attributes.transfer' + element);
+            });
+          }
+
+          return bCondition;
         });
         return {
           data: filteredProducts
@@ -2384,8 +2426,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "t094vAB7",
-    "block": "{\"symbols\":[\"&default\"],\"statements\":[[1,[28,\"input\",null,[[\"value\",\"key-up\",\"class\",\"placeholder\"],[[23,0,[\"value\"]],[28,\"action\",[[23,0,[]],\"handleFilterEntry\"],null],\"light\",\"Filter By City\"]]],false],[0,\"\\n\"],[14,1,[[23,0,[\"results\"]]]],[0,\"\\n\"]],\"hasEval\":false}",
+    "id": "Yxz1VaRH",
+    "block": "{\"symbols\":[\"&default\"],\"statements\":[[1,[28,\"input\",null,[[\"value\",\"key-up\",\"class\",\"placeholder\"],[[23,0,[\"value\"]],[28,\"action\",[[23,0,[]],\"handleFilterEntry\"],null],\"light\",\"m >=4,<192 v >=4 s >=30 t >=8 n lino\"]]],false],[0,\"\\n\"],[14,1,[[23,0,[\"results\"]]]],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
       "moduleName": "costthat/templates/components/product-list-filter.hbs"
     }
@@ -2402,8 +2444,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "iKUiiJHz",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"article\",true],[10,\"class\",\"listing\"],[8],[0,\"\\n  \"],[7,\"a\",true],[11,\"onclick\",[28,\"action\",[[23,0,[]],\"toggleImageSize\"],null]],[11,\"class\",[29,[\"image \",[28,\"if\",[[23,0,[\"isWide\"]],\"wide\"],null]]]],[10,\"role\",\"button\"],[8],[0,\"\\n    \"],[7,\"img\",true],[11,\"src\",[23,0,[\"product\",\"image\"]]],[10,\"alt\",\"\"],[8],[9],[0,\"\\n    \"],[7,\"small\",true],[8],[0,\"View Larger\"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"details\"],[8],[0,\"\\n    \"],[7,\"h3\",true],[8],[4,\"link-to\",null,[[\"class\",\"route\",\"model\"],[[24,[\"product\",\"id\"]],\"products.show\",[24,[\"product\"]]]],{\"statements\":[[1,[23,0,[\"product\",\"name\"]],false]],\"parameters\":[]},null],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail owner\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"vCPU:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"vcpu\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail type\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Memory (GiB):\"],[9],[0,\" \"],[1,[28,\"plan-property-type\",[[23,0,[\"product\",\"memory\"]]],null],false],[0,\" - \"],[1,[23,0,[\"product\",\"memory\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail location\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Storage (GB):\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"storage\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail bedrooms\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Data Transfer:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"transfer\"]],false],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[5,\"location-map\",[],[[\"@location\"],[[23,0,[\"product\",\"region\"]]]]],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
+    "id": "b0W/LXNv",
+    "block": "{\"symbols\":[],\"statements\":[[7,\"article\",true],[10,\"class\",\"listing\"],[8],[0,\"\\n  \"],[7,\"a\",true],[11,\"onclick\",[28,\"action\",[[23,0,[]],\"toggleImageSize\"],null]],[11,\"class\",[29,[\"image \",[28,\"if\",[[23,0,[\"isWide\"]],\"wide\"],null]]]],[10,\"role\",\"button\"],[8],[0,\"\\n    \"],[7,\"img\",true],[11,\"src\",[23,0,[\"product\",\"image\"]]],[10,\"alt\",\"\"],[8],[9],[0,\"\\n    \"],[7,\"small\",true],[8],[0,\"View Larger\"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[7,\"div\",true],[10,\"class\",\"details\"],[8],[0,\"\\n    \"],[7,\"h3\",true],[8],[4,\"link-to\",null,[[\"class\",\"route\",\"model\"],[[24,[\"product\",\"id\"]],\"products.show\",[24,[\"product\"]]]],{\"statements\":[[1,[23,0,[\"product\",\"name\"]],false],[0,\" - $\"],[1,[23,0,[\"product\",\"price\"]],false]],\"parameters\":[]},null],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail owner\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"vCPU:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"vcpu\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail type\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Memory (GiB):\"],[9],[0,\" \"],[1,[28,\"plan-property-type\",[[23,0,[\"product\",\"memory\"]]],null],false],[0,\" - \"],[1,[23,0,[\"product\",\"memory\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail location\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Storage (GB):\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"storage\"]],false],[0,\"\\n    \"],[9],[0,\"\\n    \"],[7,\"div\",true],[10,\"class\",\"detail bedrooms\"],[8],[0,\"\\n      \"],[7,\"span\",true],[8],[0,\"Data Transfer:\"],[9],[0,\" \"],[1,[23,0,[\"product\",\"transfer\"]],false],[0,\"\\n    \"],[9],[0,\"\\n  \"],[9],[0,\"\\n  \"],[5,\"location-map\",[],[[\"@location\"],[[23,0,[\"product\",\"region\"]]]]],[0,\"\\n\"],[9],[0,\"\\n\"]],\"hasEval\":false}",
     "meta": {
       "moduleName": "costthat/templates/components/product-listing.hbs"
     }
@@ -2528,8 +2570,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "Tjx/+GLB",
-    "block": "{\"symbols\":[\"filteredResults\",\"productUnit\"],\"statements\":[[5,\"product-list-filter\",[],[[\"@filter\"],[[28,\"action\",[[23,0,[]],\"filterByCity\"],null]]],{\"statements\":[[0,\"\\n  \"],[7,\"ul\",true],[10,\"class\",\"results\"],[8],[0,\"\\n\"],[4,\"each\",[[23,1,[]]],null,{\"statements\":[[0,\"      \"],[7,\"li\",true],[8],[5,\"product-listing\",[],[[\"@product\"],[[23,2,[]]]]],[9],[0,\"\\n\"]],\"parameters\":[2]},null],[0,\"  \"],[9],[0,\"\\n\"]],\"parameters\":[1]}],[0,\"\\n\"],[1,[22,\"outlet\"],false]],\"hasEval\":false}",
+    "id": "WfOJqk7A",
+    "block": "{\"symbols\":[\"filteredResults\",\"productUnit\"],\"statements\":[[5,\"product-list-filter\",[],[[\"@filter\"],[[28,\"action\",[[23,0,[]],\"filterByTerm\"],null]]],{\"statements\":[[0,\"\\n  \"],[7,\"ul\",true],[10,\"class\",\"results\"],[8],[0,\"\\n\"],[4,\"each\",[[23,1,[]]],null,{\"statements\":[[0,\"      \"],[7,\"li\",true],[8],[5,\"product-listing\",[],[[\"@product\"],[[23,2,[]]]]],[9],[0,\"\\n\"]],\"parameters\":[2]},null],[0,\"  \"],[9],[0,\"\\n\"]],\"parameters\":[1]}],[0,\"\\n\"],[1,[22,\"outlet\"],false]],\"hasEval\":false}",
     "meta": {
       "moduleName": "costthat/templates/products/index.hbs"
     }
